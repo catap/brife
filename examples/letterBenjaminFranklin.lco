@@ -1,0 +1,41 @@
+\ProvidesFile{letterBenjaminFranklin.lco}[2020/05/06 Benjamin Franklin template v1]
+
+\LoadLetterOption{brife}
+
+\RequirePackage{hyperref}
+
+\KOMAoptions{
+  fromalign=right,
+  fromrule=afteraddress,
+  headsepline,
+  footsepline,
+}
+
+\pagestyle{headings}
+
+\setkomavar{fromname}[]{ACME Ltd.}
+\setkomavar{fromaddress}[]{36 Craven St\\
+  Charing Cross\\
+  London WC2N 5NF\\
+  United Kingdom}
+
+\setkomavar{fromcompanyregistered}[Handelsregister]{
+  Amtsgericht Charlottenburg\\
+  HRB 112233\,A
+}
+\setkomavar{fromcompanydetails}{VATID~FR123456789\\
+  Geschäftsführer~Franklin,William}
+\setkomavar{frombank}{IBAN~CH56\,0483\,5012\,3456\,7800\,9\\
+  BIC CRESCHZZ80A\\
+  Credit Suisse AG}
+
+\setkomavar{signaturename}{Benjamin Franklin}
+\setkomavar{signatureposition}{Chief Political Officer}
+\setkomavar{signaturehandwritten}{BenjaminFranklinSignature}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% fill-column: 72
+%%% auto-fill-mode: t
+%%% End:
