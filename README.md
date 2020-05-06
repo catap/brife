@@ -67,8 +67,9 @@ when the last one is available.
 This templates supports various of electronic labels that can be used inside
 windowed envelope.
 
-We doesn't support automatical backaddress for stamp, and it will be disabled.
-Keep it in mind and if you need it, it should be embeded into provided stamp.
+We doesn't support automatical backaddress for a stamp, and it won't be
+disabled. Keep it in mind and if you need backaddress, you should embeded it
+into provided stamp over provider.
 
 To enjoy postmark just add stamp to your letter:
 ```
@@ -86,8 +87,20 @@ expect that the stamp contains it.
 
 You can see supported providers at table bellow:
 
-| Provider      | Name           | Format                             | description                                  |
-|---------------|----------------|------------------------------------|----------------------------------------------|
-| Deutsche Post | Internetmarken | DIN A4 Normalpapier (Einlegeblatt) | deutschePostInternetmarken[Recipient]        |
-| Deutsche Post | Internetmarken | Ausdruck 2-spaltig (DIN A4)        | deutschePostInternetmarkenSpaltig[Recipient] |
-| Swiss Post    | WebStamp       | C5/C6 - window left                | swissPostWebStamp[Recipient]                 |
+| Provider      | Name           | Format                             | description                                    |
+|---------------|----------------|------------------------------------|------------------------------------------------|
+| Deutsche Post | Internetmarken | DIN A4 Normalpapier (Einlegeblatt) | deutschePostInternetmarken[Recipient]          |
+| Deutsche Post | Internetmarken | Ausdruck 2-spaltig (DIN A4)        | deutschePostInternetmarkenSpaltig[Recipient]   |
+| Deutsche Post | Internetmarken | Etiketten, 2 Spalten - 5 Reihen    | deutschePostInternetmarkenEtiketten[Recipient] |
+| Swiss Post    | WebStamp       | C5/C6 - window left                | swissPostWebStamp[Recipient]                   |
+
+And if you preferer to use for your template Deutsche Post stemp with format
+`Etiketten, 2 Spalten - 5 Reihen` without recipient information, you should just
+add to your template:
+```
+\setkomavar*{stamp}{deutschePostInternetmarkenEtiketten}
+```
+that allows you to use your stamp at a letter as simple as:
+```
+\setkomavar{stamp}{Briefmarken}
+```

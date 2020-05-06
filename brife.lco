@@ -17,6 +17,10 @@
               {\KOMAoptions{addrfield=backgroundimage}}{}
   \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenSpaltigRecipient}
               {\KOMAoptions{addrfield=image}}{}
+  \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenEtiketten}
+              {\KOMAoptions{addrfield=backgroundimage}}{}
+  \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenEtikettenRecipient}
+              {\KOMAoptions{addrfield=image}}{}
   \usekomavar*[\ifstr]{stamp}{swissPostWebStamp}
               {\KOMAoptions{addrfield=backgroundimage}}{}
   \usekomavar*[\ifstr]{stamp}{swissPostWebStampRecipient}
@@ -34,6 +38,10 @@
               {\usekomavar[{\includegraphics[clip, trim=15mm 223mm 109mm 31mm]}]{stamp}}{}
   \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenSpaltigRecipient}
               {\usekomavar[{\includegraphics[clip, trim=15mm 223mm 109mm 31mm]}]{stamp}}{}
+  \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenEtiketten}
+              {\usekomavar[{\includegraphics[clip, trim=13mm 184mm 123mm 28mm]}]{stamp}}{}
+  \usekomavar*[\ifstr]{stamp}{deutschePostInternetmarkenEtikettenRecipient}
+              {\usekomavar[{\includegraphics[clip, trim=13mm 184mm 123mm 28mm]}]{stamp}}{}
   \usekomavar*[\ifstr]{stamp}{swissPostWebStamp}
               {\usekomavar[{\includegraphics[clip, trim=24mm 214mm 104mm 40mm]}]{stamp}}{}
   \usekomavar*[\ifstr]{stamp}{swissPostWebStampRecipient}
